@@ -11,7 +11,6 @@
 * #switchport trunk allowed vlan 
 
 ### router:
-* #
-R1(config)# interface fa0/0.2
-R1(config-subif)# encapsulation dot1q 2
-R1(config-subif)# ip address 10.0.2.1 255.255.255.0
+* # interface Ethernet 0/0.172
+* # encapsulation dot1q 2
+* # ip address 172.16.0.1 255.255.0.0
