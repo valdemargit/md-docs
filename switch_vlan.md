@@ -9,8 +9,8 @@
 * #show vlan brief
 * #show interfaces trunk
 
-### interfac
-* # conf t
+### range trunk
+* #conf t
 * #interface range Ethernet 2/0-3
 * #switchport trunk encapsulation dot1q
 * #switchport mode trunk
@@ -19,3 +19,10 @@
 * #exit
 * #show vlan brief
 * #show interfaces trunk
+
+### ip
+* #conf t
+* #interface vlan 2
+* #ip address 172.16.2.1 255.255.0.0
+* #no shutdown
+* #show ip interface brief
